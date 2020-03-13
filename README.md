@@ -39,7 +39,8 @@ from math import factorial
 
 ```python
 def poisson_probability(lambd, x):
-    pass
+    return (lambd** x)* np.exp(-lambd)/ factorial(x)
+    
 ```
 
 ## Question 1
@@ -48,10 +49,13 @@ A fireman fights, on average, 4 fires per month. What is the probability that a 
 
 
 ```python
-lambd_q1 = None
-prob_q1 = None
+lambd_q1 = 4/4
+prob_q1 = poisson_probability(lambd_q1, 2)
 print(prob_q1)  # Expected Output:  0.18393972058572117
 ```
+
+    0.18393972058572117
+    
 
 ## Question 2
 
@@ -59,10 +63,13 @@ A car salesman sells an average of 4 cars per week.  What is the probability the
 
 
 ```python
-lambd_q2 = None
-prob_q2 = None
+lambd_q2 = 4/7
+prob_q2 = poisson_probability(lambd_q2, 1)
 print(prob_q2)  # Expected Output: 0.32269606971871956
 ```
+
+    0.32269606971871956
+    
 
 ## Question 3
 
@@ -70,10 +77,13 @@ A website makes an average of 50 sales per day.  What is the probability that th
 
 
 ```python
-lambd_q3 = None
-prob_q3 = None
+lambd_q3 = 50/24
+prob_q3 = poisson_probability(lambd_q3,3)
 print(prob_q3)  # Expected Output: 0.18764840049328912
 ```
+
+    0.18764840049328912
+    
 
 ## Question 4
 
@@ -81,10 +91,13 @@ A factory produces 250 cars per week (assume that the factory runs day and night
 
 
 ```python
-lambd_q4 = None
-prob_q4 = None
+lambd_q4 = 250* (1/7)* (1/24)
+prob_q4 = poisson_probability(lambd_q4,3)
 print(prob_q4)   # Expected Output: 0.1240136186052091
 ```
+
+    0.1240136186052091
+    
 
 ## Question 5
 
