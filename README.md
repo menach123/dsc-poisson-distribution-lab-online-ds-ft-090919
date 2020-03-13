@@ -112,12 +112,45 @@ The following table shows the number of houses sold by a realtor each week for t
 
 
 ```python
-mean_weekly_sales = None
-lambd_q5 = None 
-prob_q5 = None
+mean_weekly_sales = np.mean([6,2,5,4])
+lambd_q5 = mean_weekly_sales 
+prob_q5 = poisson_probability(lambd_q5, 3)
 print(prob_q5)  # Expected Output: 0.18250047186175347
 ```
+
+    0.18250047186175347
+    
 
 ## Summary
 
 In this lab, we got some practice making use of our knowledge of the Poisson Distribution to answer some real-world questions!
+
+
+```python
+!jupyter nbconvert --to markdown index.ipynb
+!mv index.md README.md
+
+!git add . 
+!git commit -m "Complete"
+!git push
+```
+
+    [NbConvertApp] Converting notebook index.ipynb to markdown
+    [NbConvertApp] Writing 3183 bytes to index.md
+    warning: LF will be replaced by CRLF in index.ipynb.
+    The file will have its original line endings in your working directory
+    
+
+    [master 2ff12d1] Complete
+     2 files changed, 266 insertions(+), 10 deletions(-)
+     rewrite index.ipynb (100%)
+    
+
+    To https://github.com/menach123/dsc-poisson-distribution-lab-online-ds-ft-090919.git
+       bbab6a1..2ff12d1  master -> master
+    
+
+
+```python
+
+```
